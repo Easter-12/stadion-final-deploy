@@ -1,16 +1,14 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-auto';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+	preprocess: vitePreprocess(),
+
 	kit: {
-		// adapter-node only supports node environments, such as Replit Autoscale or Reserved VM.
-    // If you'd like to change your Replit Deployment type, see https://kit.svelte.dev/docs/building-your-app
-    // for more information on SvelteKit Adapters
-		adapter: adapter({
-      pages: 'build',
-      strict: true,
-    }),
-	},
+		// THIS IS THE CRITICAL LINE THAT MUST BE CORRECT
+		adapter: adapter()
+	}
 };
 
 export default config;
