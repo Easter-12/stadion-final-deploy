@@ -1,11 +1,11 @@
 <script>
-  // You can add any global styles or logic here if needed in the future.
+  // Global layout file for the application.
 </script>
 
 <svelte:head>
   <!-- GOOGLE ADSENSE SCRIPT START -->
-  <!-- This script will now be on every page of your site -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2762474213928569"
+  <!-- This is the UPDATED script with your new client ID -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3943655857717456"
      crossorigin="anonymous"></script>
   <!-- GOOGLE ADSENSE SCRIPT END -->
 </svelte:head>
